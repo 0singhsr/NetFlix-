@@ -1,0 +1,105 @@
+/* Ensure the row fits within the viewport */
+.row {
+  position: relative;
+  margin-left: 10px;
+  margin-top: 20px;
+  overflow: hidden; /* Prevents overflow beyond the container */
+  width: 100vw; /* Make sure the row width is 100% of the viewport */
+}
+
+/* Title styling */
+.row h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+/* Button styles for scrolling */
+.row__buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+  width: 100%;
+}
+
+.scroll__button {
+  
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.scroll__button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Adjust the scrollable container */
+.row__posters {
+  display: flex;
+  overflow-x: auto; /* Horizontal scroll */
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  gap: 10px;
+  -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+}
+
+.row__poster {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.row__posterLarge {
+  width: 200px;
+  height: 300px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+/* Add hover effect for zoom */
+.row__poster:hover,
+.row__posterLarge:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+/* Hide scrollbar but still allow scrolling */
+.row__posters::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .row__poster {
+    width: 120px;
+    height: 180px;
+  }
+
+  .row__posterLarge {
+    width: 160px;
+    height: 240px;
+  }
+
+  .row__buttons {
+    display: none; /* Hide buttons on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .row__poster {
+    width: 100px;
+    height: 150px;
+  }
+
+  .row__posterLarge {
+    width: 140px;
+    height: 210px;
+  }
+}

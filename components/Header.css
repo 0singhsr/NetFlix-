@@ -1,0 +1,66 @@
+.header {
+  /* Removed fixed positioning */
+  position: relative;   /* Default positioning */
+  margin-top: -4%;
+  left: 10;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: #111;
+  opacity: 1.9;  /* Correct opacity value */
+  z-index: 800;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+.header__options {
+  display: flex;
+  gap: 15px;
+  margin-inline-end: 5vh;
+  border-radius: 25%;
+  
+}
+
+.header__button {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  background-color: white;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  
+}
+
+.header__button:hover {
+  background-color: rgba(44, 43, 43, 0.2);
+  
+}
+
+.header__dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: white;
+}
+
+.header__select {
+  color: white;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  background-color: rgb(2, 41, 41);
+  border-radius: 15px;
+  outline: none;
+}
+
+
+

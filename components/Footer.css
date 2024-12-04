@@ -1,0 +1,45 @@
+.footer {
+    background-color: #0f0f0f;
+    color: #757575;
+    padding: 80px 0;
+    /* width: 98%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer__section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10 50px;
+    padding: 5%;
+  }
+  
+  .footer__section ul {
+    list-style-type: none;
+    padding: 30;
+    margin: 15%;
+  }
+  
+  .footer__section li {
+    margin-bottom: 10px;
+  }
+  
+  .footer__section a {
+    color: #dfe6e5;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer__section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer__question {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #e5e5e5;
+  }
+  
+  
+

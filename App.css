@@ -1,0 +1,12 @@
+body {
+  width: 102%;
+  background-color: #000;
+  color: white;
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+
+}
+
+.app {
+  padding-top: 70px; /* Creates space for the fixed header */
+}

@@ -1,0 +1,66 @@
+/* Banner Section */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  background-color: black;
+  background-image: url('https://storage.googleapis.com/kaggle-datasets-images/2386660/4027809/a91d3c271ab420776f16d06c52109edd/dataset-cover.jpg?t=2022-08-04-09-13-14');
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 29.25%, rgba(0, 0, 0, 0.40) 64.5%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  color: white;
+  z-index: 1;
+  max-width: 500px;
+}
+
+.main-heading {
+  font-size: 4.5em; /* Increases the font size */
+  font-weight: 900; /* Sets the font weight to the maximum value */
+  margin-bottom: 10px;
+}
+
+
+.sub-heading {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.ready-text {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.email-input {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.get-started-btn {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: rgb(211, 28, 28);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.get-started-btn:hover {
+  background-color: darkred;
+}
+
+
+/* https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg */

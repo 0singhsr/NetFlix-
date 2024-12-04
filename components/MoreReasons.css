@@ -1,0 +1,23 @@
+.moreReasons {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.reasonsContainer {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly between items */
+  flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+  gap: 20px; /* Adds space between items */
+  margin-top: 20px;
+}
+
+.reason {
+  background-color: #241d1d;
+  padding: 35px;
+  border-radius: 8px;
+  flex: 1; /* Allows items to grow and fill available space */
+  min-width: 200px; /* Ensures a minimum width for each item */
+  max-width: 250px; /* Ensures a maximum width for each item */
+  box-shadow: 0 4px 6px rgba(41, 10, 10, 0.1);
+}
